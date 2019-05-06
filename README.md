@@ -1,11 +1,11 @@
 # FiveM Realistic Vehicles
 
-Collection of FiveM resources for more realistic vehicle handling and speeds
+Collection of FiveM resources for more realistic vehicles.
 
-* Realistic cars
-* Realistic motorcycles
-* Modified AI traffic speeds and density
-* Disabled air control by vehicle class
+* Realistic vehicle handling
+* Realistic vehicle speeds
+* Modified AI traffic
+* Disable air control by vehicle class
 * Brake lights turn on when stopped
 
 ## Installation
@@ -16,7 +16,6 @@ Collection of FiveM resources for more realistic vehicle handling and speeds
 ```
 start RealisticTraffic
 start RealisticDrivingV
-start RealisticMotorcycles
 start RealisticAirControl
 start RealisticBrakeLights
 ```
@@ -24,4 +23,3 @@ start RealisticBrakeLights
 ## Credit
 
 * Realistic Driving V - https://www.gta5-mods.com/vehicles/realistic-driving-v
-* Semi Realistic Motorcycle Handling Mod - https://www.gta5-mods.com/vehicles/semi-realistic-motorcycle-handling-mod
