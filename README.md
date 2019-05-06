@@ -1,12 +1,12 @@
 # FiveM Realistic Vehicles
 
-Collection of FiveM resources for realistic vehicles.
+Collection of FiveM resources for more realistic vehicle handling and speeds
 
-* Realistic car handling and speeds
-* Realistic motorsycle handling and speeds
+* Realistic cars
+* Realistic motorcycles
 * Modified AI traffic speeds and density
-* Disabled air control for select vehicle classes
-* Brake lights turn on when car is parked.
+* Disabled air control by vehicle class
+* Brake lights turn on when stopped
 
 ## Installation
 
