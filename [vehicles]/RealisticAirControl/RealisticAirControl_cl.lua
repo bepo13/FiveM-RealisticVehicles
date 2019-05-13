@@ -1,8 +1,5 @@
--- PARAMETERS
-local vehicleRollThresh = 60
-
 -- Vehicles to enable/disable air control
-local vehicleClassDisable = {
+local vehicleClassDisableControl = {
     [0] = true,     --compacts
     [1] = true,     --sedans
     [2] = true,     --SUV's
@@ -37,21 +34,11 @@ Citizen.CreateThread(function()
         local vehicleClass = GetVehicleClass(vehicle)
 
         -- Disable control if player is in the driver seat and vehicle class matches array
-        if ((GetPedInVehicleSeat(vehicle, -1) == player) and vehicleClassDisable[vehicleClass]) then
-            -- Check if vehicle is in the air
+        if ((GetPedInVehicleSeat(vehicle, -1) == player) and vehicleClassDisableControl[vehicleClass]) then
+            -- Check if vehicle is in the air and disable L/R and UP/DN controls
             if IsEntityInAir(vehicle) then
-                -- Disable L/R and UP/DN controls
                 DisableControlAction(2, 59)
                 DisableControlAction(2, 60)
-            end
-        
-            -- Get vehicle roll and check if upside down
-            local vehicleRoll = GetEntityRoll(vehicle)
-            if (math.abs(vehicleRoll) > vehicleRollThresh) then
-                -- Disable L/R and UP/DN controls and turn engine off
-                DisableControlAction(2, 59)
-                DisableControlAction(2, 60)
-                SetVehicleEngineOn(vehicle, false)
             end
         end
     end
